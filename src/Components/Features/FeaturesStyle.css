@@ -1,0 +1,68 @@
+.features_ar {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 5rem auto;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.features_div {
+    border: 1px solid #cce7d0;
+    border-radius: 14px;
+    padding: .3rem;
+    display: inline-block;
+    gap: 1rem;
+}
+
+.features_div img {
+    width: 100%;
+}
+
+.shipping {
+    margin: .7rem 0;
+    font-size: 1.2rem;
+    padding: .3rem 0;
+    border-radius: .4rem;
+    background-color: #fddde4;
+}
+
+.online {
+    margin: .7rem 0;
+    background-color: #cdebbc;
+    font-size: 1.2rem;
+    padding: .3rem 0;
+    border-radius: .4rem;
+}
+
+.save {
+    margin: .7rem 0;
+    background-color: #d1e8f2;
+    font-size: 1.2rem;
+    padding: .3rem 0;
+    border-radius: .4rem;
+}
+
+.promotion {
+    margin: .7rem 0;
+    background-color: #cdd4f8;
+    font-size: 1.2rem;
+    padding: .3rem 0;
+    border-radius: .4rem;
+}
+
+.happy {
+    margin: .7rem 0;
+    background-color: #f6dbd6;
+    font-size: 1.2rem;
+    padding: .3rem 0;
+    border-radius: .4rem;
+}
+
+.support {
+    margin: .7rem 0;
+    background-color: #fff2e5;
+    font-size: 1.2rem;
+    padding: .3rem 0;
+    border-radius: .4rem;
+}

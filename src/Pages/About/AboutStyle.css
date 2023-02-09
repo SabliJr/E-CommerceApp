@@ -1,0 +1,46 @@
+.About_H {
+    background-image: url('../../../public/Assets/b2.jpg');
+    height: 20vh;
+    width: 100%;
+    flex-direction: column;
+    color: aliceblue;
+    margin: 0 auto;
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.About_H p {
+    color: rgb(85, 255, 229);
+    font-size: 1.5rem;
+}
+
+.About_T {
+    width: 880px;
+    margin: 5rem auto;
+}
+
+.About_T h3,
+.About_v h3 {
+    font-size: 1.8rem;
+    margin: .6rem 0;
+    color: rgba(44, 62, 80, 1.0);
+}
+
+.About_T p {
+    color: dimgray;
+    line-height: 1.3;
+    font-size: 1.2rem;
+}
+
+.About_v {
+    width: 880px;
+    margin: 6rem auto;
+    text-align: center;
+}
+
+.About_v video {
+    width: 100%;
+    margin: 1rem 0;
+}
