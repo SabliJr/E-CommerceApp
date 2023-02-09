@@ -1,5 +1,6 @@
 import React from "react";
 import "./HeaderStyle.css";
+import { Link } from "react-router-dom";
 
 import { MdOutlineStoreMallDirectory } from "react-icons/md";
 import { FaShoppingBag } from "react-icons/fa";
@@ -9,14 +10,48 @@ const index = () => {
     <header className='Header'>
       <nav className='navContainer'>
         <h1 className='Logo'>
-          <MdOutlineStoreMallDirectory className='Logo_Icon' />
-          SabLi Store
+          <Link
+            style={{
+              textDecoration: "none",
+              color: "rgba(44, 62, 80, 1.0)",
+            }}
+            to='/'>
+            <MdOutlineStoreMallDirectory className='Logo_Icon' />
+            SabLi Store
+          </Link>
         </h1>
         <div className='Links'>
           <ul className='navLinks'>
-            <li>Shop</li>
-            <li>About Us</li>
-            <li>Contact Us</li>
+            <li>
+              <Link
+                style={{
+                  textDecoration: "none",
+                  color: "rgba(44, 62, 80, 1.0)",
+                }}
+                to='/'>
+                Shop
+              </Link>
+            </li>
+            <li>
+              <Link
+                style={{
+                  textDecoration: "none",
+                  color: "rgba(44, 62, 80, 1.0)",
+                }}
+                to='/about_us'>
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                style={{
+                  textDecoration: "none",
+                  color: "rgba(44, 62, 80, 1.0)",
+                }}
+                to='/contact_us'>
+                Contact Us
+              </Link>
+            </li>
           </ul>
           <div className='cartDiv'>
             <FaShoppingBag className='Nav_Icon' />
