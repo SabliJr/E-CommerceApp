@@ -73,7 +73,7 @@ const Products = [
   },
   {
     id: 10,
-    name: "Shirt Pants",
+    name: "Short Pants",
     img: "../Assets/n6.jpg",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur, iure officia ullam! Iste atque libero eos corporis similique. Laborum cupiditate veritatis aspernatur commodi?",
