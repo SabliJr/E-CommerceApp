@@ -1,0 +1,73 @@
+.ProductAr {
+    text-align: center;
+    max-width: 1280px;
+    margin: 9.375rem auto;
+}
+
+.ProductAr h2 {
+    color: rgba(44, 62, 80, 1.0);
+}
+
+.ProductAr>p {
+    margin: .3rem 0;
+    color: #f49746;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.Products {
+    text-align: start;
+    display: flex;
+    margin-top: 2.5rem;
+    gap: 1.6rem;
+    flex-wrap: wrap;
+}
+
+.ProductDiv {
+    width: 23%;
+    min-width: 15.625rem;
+    padding: 0.625rem 0.75rem;
+    border: 1px solid #cce7d0;
+    border-radius: 1.5625rem;
+    cursor: pointer;
+    margin: 0.9375rem 0;
+    position: relative;
+    box-shadow: 1.25rem 1.25rem 1.875rem rgba(0, 0, 0, 0.02);
+}
+
+.Product {
+    width: 100%;
+    border-radius: 1.25rem;
+}
+
+.productText {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem .5rem;
+}
+
+.productText h3 {
+    color: rgba(44, 62, 80, 1.0);
+    margin-top: .7rem;
+}
+
+.productText p {
+    color: dimgray;
+}
+
+.productText h5 {
+    color: rgba(44, 62, 80, 1.0);
+    font-size: 1rem;
+}
+
+.Item_Icon {
+    font-size: 1.7rem;
+    padding: .2rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    bottom: .4rem;
+    background-color: #f49746;
+    ;
+}
