@@ -1,0 +1,67 @@
+.Header {
+    width: 100vw;
+    height: 4rem;
+    background-color: #e3eaf3;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.navContainer {
+    max-width: 1280px;
+    margin: 0rem auto;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Logo {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+.Logo_Icon {
+    margin: 0 .3rem;
+    font-size: 1.8rem;
+    position: absolute;
+    bottom: 0.07rem;
+    left: -2.3rem;
+}
+
+.Links {
+    display: flex;
+    gap: 4rem;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.navLinks li {
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.Nav_Icon {
+    font-size: 1.8rem;
+}
+
+.cartDiv {
+    position: relative;
+}
+
+.carItem {
+    position: absolute;
+    top: -.5rem;
+    right: -0.4rem;
+    background-color: #f49746;
+    color: black;
+    padding: 2px;
+    border-radius: .4rem;
+    font-size: 1rem;
+}

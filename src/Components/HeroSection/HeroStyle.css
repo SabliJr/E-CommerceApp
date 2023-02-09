@@ -1,0 +1,43 @@
+.hero {
+    background-image: linear-gradient(rgba(230, 126, 34, 0.3), rgba(230, 126, 34, 0.5)), url('../../Assets/1.jpeg');
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    color: white;
+    font-family: poppins;
+    letter-spacing: .5px;
+    line-height: normal;
+}
+
+.hero h5 {
+    color: rgb(85, 255, 229);
+    font-size: 1.3rem;
+}
+
+.hero h4 {
+    font-size: 1.1rem;
+    color: rgb(246, 250, 254);
+}
+
+.hero button {
+    font-size: 1.5rem;
+    background-color: rgba(44, 62, 80, 1.0);
+    border: none;
+    padding: .4rem;
+    border-radius: .5rem;
+    font-weight: 600;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin: 1.3rem 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
