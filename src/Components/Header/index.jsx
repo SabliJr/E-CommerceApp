@@ -42,16 +42,6 @@ const index = () => {
                 About Us
               </Link>
             </li>
-            <li>
-              <Link
-                style={{
-                  textDecoration: "none",
-                  color: "rgba(44, 62, 80, 1.0)",
-                }}
-                to='/contact_us'>
-                Contact Us
-              </Link>
-            </li>
           </ul>
           <div className='cartDiv'>
             <FaShoppingBag className='Nav_Icon' />

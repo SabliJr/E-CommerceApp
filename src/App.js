@@ -5,7 +5,6 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./Components/Header/index";
 import ShopPage from "./Pages/Shop";
 import AboutUs from "./Pages/About/AboutUs";
-import ContactUs from "./Pages/Contact/ContactUs";
 
 const App = () => {
   return (
@@ -14,7 +13,6 @@ const App = () => {
       <Routes>
         <Route path='/' element={<ShopPage />} />
         <Route path='/about_us' element={<AboutUs />} />
-        <Route path='/contact_us' element={<ContactUs />} />
       </Routes>
     </>
   );
