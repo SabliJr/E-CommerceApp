@@ -1,18 +1,32 @@
-import React from "react";
+import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import "./ProductsStyle.css";
 import { FormateCurrency } from "../../Utility/FormateCurrency";
 import { MdOutlineAddShoppingCart } from "react-icons/md";
 
-const SingleProduct = ({ name, img, description, price }) => {
+import { productsContext } from "../../Context/ManageProducts";
+
+const SingleProduct = ({ id, name, img, description, price }) => {
+  const { addToCart } = useContext(productsContext);
+  const navigate = useNavigate();
+
+  let productSelect = (id) => {
+    navigate(`productDetail/${id}`);
+  };
+
   return (
     <div className='ProductDiv'>
-      <img src={img} alt='ProductImg' className='Product' />
-      <div className='productText'>
+      <div
+        className='productText'
+        onClick={() => {
+          productSelect(id);
+        }}>
+        <img src={img} alt='ProductImg' className='Product' />
         <h3>{name}</h3>
         <p>{description.slice(0, 80)}...</p>
-        <h5>{FormateCurrency(price)}</h5>
       </div>
-      <MdOutlineAddShoppingCart className='Item_Icon' />
+      <h5>{FormateCurrency(price)}</h5>
+      <MdOutlineAddShoppingCart className='Item_Icon' onClick={addToCart} />
     </div>
   );
 };

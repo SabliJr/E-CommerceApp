@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./HeaderStyle.css";
 import { Link } from "react-router-dom";
 
 import { MdOutlineStoreMallDirectory } from "react-icons/md";
 import { FaShoppingBag } from "react-icons/fa";
+import { productsContext } from "../../Context/ManageProducts";
 
-const index = () => {
+const Index = () => {
+  const { addToCart } = useContext(productsContext);
+
   return (
     <header className='Header'>
       <nav className='navContainer'>
@@ -42,20 +45,10 @@ const index = () => {
                 About Us
               </Link>
             </li>
-            <li>
-              <Link
-                style={{
-                  textDecoration: "none",
-                  color: "rgba(44, 62, 80, 1.0)",
-                }}
-                to='/contact_us'>
-                Contact Us
-              </Link>
-            </li>
           </ul>
           <div className='cartDiv'>
             <FaShoppingBag className='Nav_Icon' />
-            <p className='carItem'>0</p>
+            <p className='carItem'>3</p>
           </div>
         </div>
       </nav>
@@ -63,4 +56,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

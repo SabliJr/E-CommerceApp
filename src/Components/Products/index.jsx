@@ -1,6 +1,7 @@
 import React from "react";
 import Products from "../../Data/Products";
 import SingleProduct from "./SingleProduct";
+import "./ProductsStyle.css";
 
 const index = () => {
   return (
