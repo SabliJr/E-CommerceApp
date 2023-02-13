@@ -1,0 +1,80 @@
+.productDiv {
+    max-width: 1280px;
+    margin: 6rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.6rem;
+}
+
+.ProductImg {
+    width: 35vw;
+    border: 1px solid #cce7d0;
+    border-radius: 1.25rem;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30vw;
+}
+
+.productInfo p {
+    color: rgb(144, 141, 141);
+    line-height: 1.3;
+    font-size: 1.2rem;
+}
+
+.productInfo h2 {
+    color: rgba(44, 62, 80, 1.0);
+}
+
+.productInfo>h5 {
+    color: rgba(44, 62, 80, 1.0);
+    font-size: 1rem;
+}
+
+.mid_div {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.qntDiv {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+#size_select {
+    margin-top: .6rem;
+    padding: .2rem .4rem;
+    font-size: .8rem;
+    border-radius: .4rem;
+}
+
+#size_select:focus {
+    outline: none;
+}
+
+.ProButton {
+    background-color: transparent;
+    padding: 1rem .5rem;
+    font-size: 1.7rem;
+    border-radius: .8rem;
+    border: 2px solid #f49746;
+    color: #f49746;
+    cursor: pointer;
+}
+
+.ProButton:hover {
+    background-color: #f49746;
+    color: aliceblue;
+}
+
+.ProIcon {
+    font-size: 1.8rem;
+    color: rgba(44, 62, 80, 1.0);
+    cursor: pointer;
+}
