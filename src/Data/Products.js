@@ -1,7 +1,7 @@
 const Products = [
   {
     id: 1,
-    name: "Shirt",
+    name: "Cartoon Astronaut T-Shirts",
     img: "../Assets/f1.jpg",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur, iure officia ullam! Iste atque libero eos corporis similique. Laborum cupiditate veritatis aspernatur commodi?",
@@ -9,7 +9,7 @@ const Products = [
   },
   {
     id: 2,
-    name: "Shirt",
+    name: "Cartoon Astronaut T-Shirts",
     img: "../Assets/f2.jpg",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur, iure officia ullam! Iste atque libero eos corporis similique. Laborum cupiditate veritatis aspernatur commodi?",
@@ -17,7 +17,7 @@ const Products = [
   },
   {
     id: 3,
-    name: "Shirt",
+    name: "Cartoon Astronaut T-Shirts",
     img: "../Assets/f3.jpg",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur, iure officia ullam! Iste atque libero eos corporis similique. Laborum cupiditate veritatis aspernatur commodi?",
@@ -25,7 +25,7 @@ const Products = [
   },
   {
     id: 4,
-    name: "Shirt",
+    name: "Cartoon Astronaut T-Shirts",
     img: "../Assets/f4.jpg",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur, iure officia ullam! Iste atque libero eos corporis similique. Laborum cupiditate veritatis aspernatur commodi?",
@@ -33,7 +33,7 @@ const Products = [
   },
   {
     id: 5,
-    name: "Shirt",
+    name: "Cartoon Astronaut T-Shirts",
     img: "../Assets/f5.jpg",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur, iure officia ullam! Iste atque libero eos corporis similique. Laborum cupiditate veritatis aspernatur commodi?",
@@ -57,7 +57,7 @@ const Products = [
   },
   {
     id: 8,
-    name: "Shirt",
+    name: "Cartoon Astronaut T-Shirts",
     img: "../Assets/f8.jpg",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur, iure officia ullam! Iste atque libero eos corporis similique. Laborum cupiditate veritatis aspernatur commodi?",
@@ -65,7 +65,7 @@ const Products = [
   },
   {
     id: 9,
-    name: "Shirt",
+    name: "Cartoon Astronaut T-Shirts",
     img: "../Assets/n1.jpg",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur, iure officia ullam! Iste atque libero eos corporis similique. Laborum cupiditate veritatis aspernatur commodi?",
@@ -81,7 +81,7 @@ const Products = [
   },
   {
     id: 11,
-    name: "Shirt",
+    name: "Cartoon Astronaut T-Shirts",
     img: "../Assets/n8.jpg",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur, iure officia ullam! Iste atque libero eos corporis similique. Laborum cupiditate veritatis aspernatur commodi?",
