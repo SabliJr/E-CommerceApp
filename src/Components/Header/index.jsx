@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./HeaderStyle.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { MdOutlineStoreMallDirectory } from "react-icons/md";
 import { FaShoppingBag } from "react-icons/fa";
@@ -8,6 +8,11 @@ import { productsContext } from "../../Context/ManageProducts";
 
 const Index = () => {
   const { sendToCart, warning } = useContext(productsContext);
+
+  let navigate = useNavigate();
+  let cartItem = () => {
+    navigate("cart_page");
+  };
 
   return (
     <header className='Header'>
@@ -46,7 +51,7 @@ const Index = () => {
               </Link>
             </li>
           </ul>
-          <div className='cartDiv'>
+          <div className='cartDiv' onClick={cartItem}>
             <FaShoppingBag className='Nav_Icon' />
             <p className='carItem'>{sendToCart.length}</p>
           </div>

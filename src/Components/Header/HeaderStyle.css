@@ -62,6 +62,7 @@
 
 .cartDiv {
     position: relative;
+    cursor: pointer;
 }
 
 .carItem {
