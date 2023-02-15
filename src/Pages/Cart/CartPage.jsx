@@ -1,10 +1,13 @@
 import React from "react";
+import "../../Components/CartItems/CartItems.css";
+
+import CartItems from "../../Components/CartItems/Index";
 
 const CartPage = () => {
   return (
-    <div>
-      <h2>Here you will find your items</h2>
-    </div>
+    <>
+      <CartItems />
+    </>
   );
 };
 
