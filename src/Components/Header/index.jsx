@@ -7,7 +7,7 @@ import { FaShoppingBag } from "react-icons/fa";
 import { productsContext } from "../../Context/ManageProducts";
 
 const Index = () => {
-  const { addToCart } = useContext(productsContext);
+  const { sendToCart, warning } = useContext(productsContext);
 
   return (
     <header className='Header'>
@@ -48,9 +48,12 @@ const Index = () => {
           </ul>
           <div className='cartDiv'>
             <FaShoppingBag className='Nav_Icon' />
-            <p className='carItem'>3</p>
+            <p className='carItem'>{sendToCart.length}</p>
           </div>
         </div>
+        {warning && (
+          <span className='Warning'>Item is in the cart already</span>
+        )}
       </nav>
     </header>
   );

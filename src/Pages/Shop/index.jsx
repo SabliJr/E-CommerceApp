@@ -1,8 +1,11 @@
 import React from "react";
+
+//Components
 import Hero from "../../Components/HeroSection/Hero";
 import Products from "../../Components/Products/index";
 import NewsLetter from "../../Components/NewsLetter/SignUp";
-const index = () => {
+
+const Index = () => {
   return (
     <>
       <Hero />
@@ -12,4 +15,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

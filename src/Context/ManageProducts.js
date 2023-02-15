@@ -1,21 +1,37 @@
-import { createContext, useReducer, useState } from "react";
-import AppReducer from "./AppReducer";
-
+import { createContext, useState } from "react";
+// import AppReducer from "./AppReducer";
 export const productsContext = createContext();
 
-let cartItems = 0;
-
 export const ManageProductsProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(AppReducer, cartItems);
-  const [cart, setCrt] = useState(cartItems);
+  const [sendToCart, setSendToCart] = useState([]);
+  const [warning, setWarning] = useState(false);
 
-  let addToCart = (cart) => {};
+  // const [state, dispatch] = useReducer(AppReducer, cartItems);
+
+  let addToCart = (x) => {
+    let isPresent = false;
+    sendToCart.forEach((product) => {
+      if (x.id === product.id) {
+        isPresent = true;
+      }
+    });
+
+    if (isPresent) {
+      setWarning(true);
+      setTimeout(() => {
+        setWarning(false);
+      }, 2000);
+      return;
+    }
+    setSendToCart([...sendToCart, x]);
+  };
 
   return (
     <productsContext.Provider
       value={{
-        cart: state.cart,
         addToCart,
+        sendToCart,
+        warning,
       }}>
       {children}
     </productsContext.Provider>

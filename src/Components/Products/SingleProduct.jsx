@@ -6,10 +6,10 @@ import { MdOutlineAddShoppingCart } from "react-icons/md";
 
 import { productsContext } from "../../Context/ManageProducts";
 
-const SingleProduct = ({ id, name, img, description, price }) => {
+const SingleProduct = ({ x }) => {
   const { addToCart } = useContext(productsContext);
-  const navigate = useNavigate();
 
+  let navigate = useNavigate();
   let productSelect = (id) => {
     navigate(`productDetail/${id}`);
   };
@@ -19,14 +19,17 @@ const SingleProduct = ({ id, name, img, description, price }) => {
       <div
         className='productText'
         onClick={() => {
-          productSelect(id);
+          productSelect(x.id);
         }}>
-        <img src={img} alt='ProductImg' className='Product' />
-        <h3>{name}</h3>
-        <p>{description.slice(0, 80)}...</p>
+        <img src={x.img} alt='ProductImg' className='Product' />
+        <h3>{x.name}</h3>
+        <p>{x.description.slice(0, 80)}...</p>
       </div>
-      <h5>{FormateCurrency(price)}</h5>
-      <MdOutlineAddShoppingCart className='Item_Icon' onClick={addToCart} />
+      <h5>{FormateCurrency(x.price)}</h5>
+      <MdOutlineAddShoppingCart
+        className='Item_Icon'
+        onClick={() => addToCart(x)}
+      />
     </div>
   );
 };
