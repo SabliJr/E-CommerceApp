@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import "./CartItems.css";
 
 import { FormateCurrency } from "../../Utility/FormateCurrency";
@@ -6,8 +7,10 @@ import { productsContext } from "../../Context/ManageProducts";
 import { CiSquareMinus, CiSquarePlus } from "react-icons/ci";
 
 const Index = () => {
-  const { sendToCart } = useContext(productsContext);
-  console.log(sendToCart);
+  const { sendToCart, removeItemDeCart, totalPrice } =
+    useContext(productsContext);
+
+  let navigate = useNavigate();
 
   return (
     <div className='cartItemDiv'>
@@ -33,20 +36,28 @@ const Index = () => {
                   </div>
                   <div className='CartIcons'>
                     <CiSquareMinus className='ProIcon' />
-                    <h5>QNT: 3</h5>
+                    <h5>QNT: 0</h5>
                     <CiSquarePlus className='ProIcon' />
                   </div>
-                  <button className='RemoveBtn'>Remove</button>
+                  <button
+                    className='RemoveBtn'
+                    onClick={() => removeItemDeCart(x.id)}>
+                    Remove
+                  </button>
                 </main>
               </>
             );
           })}
-          <span className='cart_total'>Total sum: {FormateCurrency(1150)}</span>
+          <span className='cart_total'>
+            Total sum: {FormateCurrency(totalPrice)}
+          </span>
         </section>
       ) : (
         <div className='No_item_div'>
           <p className='no_items'>Your Basket is Empty</p>
-          <button className='Go_shopping'>Go Shopping</button>
+          <button className='Go_shopping' onClick={() => navigate("/")}>
+            Go Shopping
+          </button>
         </div>
       )}
     </div>

@@ -6,7 +6,7 @@ import "./ProductsStyle.css";
 
 const Index = () => {
   return (
-    <article className='ProductAr'>
+    <article className='ProductAr' id='shopping_section'>
       <h2> Upcoming season.</h2>
       <p>Get your prefect summer outfit & get ready for it!</p>
       <div className='Products'>

@@ -42,7 +42,7 @@ const ProductDetail = () => {
 
                   <div className='qntDiv'>
                     <CiSquareMinus className='ProIcon' />
-                    <h5>QNT: 3</h5>
+                    <h5>QNT: 0 </h5>
                     <CiSquarePlus className='ProIcon' />
                   </div>
                 </div>

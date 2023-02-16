@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./HeroStyle.css";
 
 const Hero = () => {
@@ -13,7 +14,16 @@ const Hero = () => {
             summer collection
           </h1>
           <h5>Save more with coupons & up to 70% off.</h5>
-          <button>Shop Now</button>
+          <button>
+            <Link
+              to='shopping_section'
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-150}>
+              Shop Now
+            </Link>
+          </button>
         </div>
       </section>
     </>
