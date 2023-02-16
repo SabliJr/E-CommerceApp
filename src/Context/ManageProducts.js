@@ -1,21 +1,80 @@
-import { createContext, useReducer, useState } from "react";
-import AppReducer from "./AppReducer";
-
+import { createContext, useState, useEffect } from "react";
 export const productsContext = createContext();
 
-let cartItems = 0;
-
 export const ManageProductsProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(AppReducer, cartItems);
-  const [cart, setCrt] = useState(cartItems);
+  const [sendToCart, setSendToCart] = useState([]);
+  const [warning, setWarning] = useState(false);
+  const [totalPrice, setTotalPrice] = useState(0);
+  // const [quantity, setQuantity] = useState(0);
 
-  let addToCart = (cart) => {};
+  //Adding item to the cart
+  let addToCart = (x) => {
+    let isPresent = false;
+    sendToCart.forEach((product) => {
+      if (x.id === product.id) {
+        isPresent = true;
+      }
+    });
+
+    if (isPresent) {
+      setWarning(true);
+      setTimeout(() => {
+        setWarning(false);
+      }, 2000);
+      return;
+    }
+    setSendToCart([...sendToCart, x]);
+  };
+
+  //Removing item from cart
+  let removeItemDeCart = (id) => {
+    const newArr = sendToCart.filter((y) => y.id !== id);
+    setSendToCart(newArr);
+  };
+
+  //Calculating the total price
+  let calculateTotal = () => {
+    let total = sendToCart
+      .map((f) => f.price)
+      .reduce((acc, val) => acc + val, 0);
+    setTotalPrice(total);
+  };
+
+  useEffect(() => {
+    calculateTotal();
+  });
+
+  // let increaseProQnt = (x, d) => {
+  //   let clickedBtn = d;
+  //   let decres = quantity - 1;
+
+  //   if (clickedBtn === +1) {
+  //     setQuantity(quantity + 1);
+  //   } else if (clickedBtn === -1) {
+  //     setQuantity(quantity > 0 ? decres : 0);
+  //   }
+  // };
+
+  // let addTheProduct = (x) => {
+  //   sendToCart.forEach((product) => {
+  //     if (x.id === product.id) {
+  //       quantity = +sendToCart;
+  //     }
+  //   });
+  //   setSendToCart([...sendToCart, x, quantity]);
+  // };
 
   return (
     <productsContext.Provider
       value={{
-        cart: state.cart,
         addToCart,
+        sendToCart,
+        warning,
+        removeItemDeCart,
+        totalPrice,
+        // quantity,
+        // increaseProQnt,
+        // addTheProduct,
       }}>
       {children}
     </productsContext.Provider>

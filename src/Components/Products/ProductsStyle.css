@@ -2,6 +2,7 @@
     text-align: center;
     max-width: 1280px;
     margin: 9.375rem auto;
+    position: relative;
 }
 
 .ProductAr h2 {

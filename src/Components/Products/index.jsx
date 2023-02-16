@@ -3,18 +3,19 @@ import Products from "../../Data/Products";
 import SingleProduct from "./SingleProduct";
 import "./ProductsStyle.css";
 
-const index = () => {
+
+const Index = () => {
   return (
-    <article className='ProductAr'>
+    <article className='ProductAr' id='shopping_section'>
       <h2> Upcoming season.</h2>
       <p>Get your prefect summer outfit & get ready for it!</p>
       <div className='Products'>
         {Products?.map((x, id) => {
-          return <SingleProduct key={id} {...x} />;
+          return <SingleProduct key={id} x={x} />;
         })}
       </div>
     </article>
   );
 };
 
-export default index;
+export default Index;
