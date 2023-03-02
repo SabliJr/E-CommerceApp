@@ -6,6 +6,7 @@ const Products = [
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur, iure officia ullam! Iste atque libero eos corporis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit.Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur.",
     price: 24.99,
+    quantity: 1,
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ const Products = [
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur, iure officia ullam! Iste atque libero eos corporis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit.Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur.",
     price: 24.99,
+    quantity: 1,
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const Products = [
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur, iure officia ullam! Iste atque libero eos corporis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit.Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur.",
     price: 24.99,
+    quantity: 1,
   },
   {
     id: 4,
@@ -31,6 +34,7 @@ const Products = [
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur, iure officia ullam! Iste atque libero eos corporis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit.Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur.",
 
     price: 24.99,
+    quantity: 1,
   },
   {
     id: 5,
@@ -39,6 +43,7 @@ const Products = [
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur, iure officia ullam! Iste atque libero eos corporis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit.Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur.",
     price: 24.99,
+    quantity: 1,
   },
   {
     id: 6,
@@ -47,6 +52,7 @@ const Products = [
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur, iure officia ullam! Iste atque libero eos corporis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit.Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur.",
     price: 34.99,
+    quantity: 1,
   },
   {
     id: 7,
@@ -55,6 +61,7 @@ const Products = [
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur, iure officia ullam! Iste atque libero eos corporis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit.Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur.",
     price: 29.99,
+    quantity: 1,
   },
   {
     id: 8,
@@ -63,6 +70,7 @@ const Products = [
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur, iure officia ullam! Iste atque libero eos corporis similique.  Lorem, ipsum dolor sit amet consectetur adipisicing elit.Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur.",
     price: 19.99,
+    quantity: 1,
   },
   {
     id: 9,
@@ -71,6 +79,7 @@ const Products = [
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur, iure officia ullam! Iste atque libero eos corporis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit.Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur.",
     price: 24.99,
+    quantity: 1,
   },
   {
     id: 10,
@@ -79,6 +88,7 @@ const Products = [
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur, iure officia ullam! Iste atque libero eos corporis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit.Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur.",
     price: 19.99,
+    quantity: 1,
   },
   {
     id: 11,
@@ -87,6 +97,7 @@ const Products = [
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur, iure officia ullam! Iste atque libero eos corporis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit.Consequatur voluptatum aliquam dolores sequi natus dolorum consectetur.",
     price: 24.99,
+    quantity: 1,
   },
 ];
 

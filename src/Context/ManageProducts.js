@@ -26,6 +26,44 @@ export const ManageProductsProvider = ({ children }) => {
     setSendToCart([...sendToCart, x]);
   };
 
+  // Increase product quantity
+  const handleQuantityIncrease = (productId) => {
+    // Find relevant product index
+    const productIndex = sendToCart.findIndex((pro) => pro.id === productId);
+    // Find product
+    const product = sendToCart[productIndex];
+    // Increase product quantity
+    product.quantity += 1;
+    // Take a copy of sendToCart without the product need to be updated
+    const charProducts = sendToCart.slice();
+    // Add back the updated product to charProducts
+    charProducts.slice(product, 0);
+    console.log({ charProducts });
+    // Update sendToCart with the new data
+    setSendToCart(charProducts);
+  };
+
+  // Increase product quantity
+  const handleQuantityDecrease = (productId) => {
+    // Find relevant product index
+    const productIndex = sendToCart.findIndex((pro) => pro.id === productId);
+    // Find product
+    const product = sendToCart[productIndex];
+    // Do nothing when the current product quantity is zero
+    if (product.quantity <= 0) {
+      return;
+    }
+    // Decrease product quantity
+    product.quantity -= 1;
+    // Take a copy of sendToCart without the product need to be updated
+    const charProducts = sendToCart.slice();
+    // Add back the updated product to charProducts
+    charProducts.slice(product, 0);
+    console.log({ charProducts });
+    // Update sendToCart with the new data
+    setSendToCart(charProducts);
+  };
+
   //Removing item from cart
   let removeItemDeCart = (id) => {
     const newArr = sendToCart.filter((y) => y.id !== id);
@@ -72,10 +110,13 @@ export const ManageProductsProvider = ({ children }) => {
         warning,
         removeItemDeCart,
         totalPrice,
+        handleQuantityDecrease,
+        handleQuantityIncrease,
         // quantity,
         // increaseProQnt,
         // addTheProduct,
-      }}>
+      }}
+    >
       {children}
     </productsContext.Provider>
   );
