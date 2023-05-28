@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ProductDetail.css";
 
 import NewsLetter from "../NewsLetter/SignUp";
@@ -10,8 +10,12 @@ import { CiSquarePlus } from "react-icons/ci";
 import { CiSquareMinus } from "react-icons/ci";
 
 const ProductDetail = () => {
+  const [selectSize, setSize] = useState("");
+
   let gettingProduct = window.location.pathname.split("/");
   let productId = gettingProduct[2];
+
+  console.log("5");
 
   return (
     <main>

@@ -4,11 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 
 import { MdOutlineStoreMallDirectory } from "react-icons/md";
 import { FaShoppingBag } from "react-icons/fa";
-import { productsContext } from "../../Context/ManageProducts";
 
 const Index = () => {
-  const { sendToCart, warning } = useContext(productsContext);
-
   let navigate = useNavigate();
   let cartItem = () => {
     navigate("cart_page");
@@ -53,12 +50,12 @@ const Index = () => {
           </ul>
           <div className='cartDiv' onClick={cartItem}>
             <FaShoppingBag className='Nav_Icon' />
-            <p className='carItem'>{sendToCart.length}</p>
+            <p className='carItem'>0</p>
           </div>
         </div>
-        {warning && (
+        {/* {warning && (
           <span className='Warning'>Item is in the cart already</span>
-        )}
+        )} */}
       </nav>
     </header>
   );

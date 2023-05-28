@@ -3,23 +3,23 @@ import { useNavigate } from "react-router-dom";
 import "./CartItems.css";
 
 import { FormateCurrency } from "../../Utility/FormateCurrency";
-import { productsContext } from "../../Context/ManageProducts";
+// import { productsContext } from "../../Context/ManageProducts";
 import { CiSquareMinus, CiSquarePlus } from "react-icons/ci";
 
 const Index = () => {
-  const {
-    sendToCart,
-    removeItemDeCart,
-    totalPrice,
-    handleQuantityIncrease,
-    handleQuantityDecrease,
-  } = useContext(productsContext);
+  // const {
+  //   sendToCart,
+  //   removeItemDeCart,
+  //   totalPrice,
+  //   handleQuantityIncrease,
+  //   handleQuantityDecrease,
+  // } = useContext(productsContext);
 
   let navigate = useNavigate();
 
   return (
-    <div className="cartItemDiv">
-      {sendToCart.length > 0 ? (
+    <div className='cartItemDiv'>
+      {/* {sendToCart.length > 0 ? (
         <section>
           {sendToCart?.map((x) => {
             console.log({ x });
@@ -68,15 +68,15 @@ const Index = () => {
           <span className="cart_total">
             Total sum: {FormateCurrency(totalPrice)}
           </span>
-        </section>
-      ) : (
+        </section> */}
+      {/* ) : (
         <div className="No_item_div">
           <p className="no_items">Your Basket is Empty</p>
           <button className="Go_shopping" onClick={() => navigate("/")}>
             Go Shopping
           </button>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
